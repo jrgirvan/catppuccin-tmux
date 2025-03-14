@@ -244,3 +244,23 @@ set -agF status-right "#{E:@catppuccin_status_kube}"
 set -g @plugin 'jonmosco/kube-tmux'
 run '~/.tmux/plugins/tpm/tpm'
 ```
+
+## Meetings module
+
+**Requirements:** This module depends on [tmux-meetings](https://github.com/jrgirvan/tmux-meetings).
+
+**Install:** The preferred way to install tmux-meetings is using [TPM](https://github.com/tmux-plugins/tpm).
+
+**Configure:**
+
+```sh
+run ~/.config/tmux/plugins/catppuccin/tmux/catppuccin.tmux
+
+set -agF status-right "#{E:@catppuccin_status_meetings}"
+
+set -g @plugin 'jrgirvan/tmux-meeting'
+
+set-option -g @tmux-meetings-calendars "your.email@addre.ss"
+
+run '~/.tmux/plugins/tpm/tpm'
+```
